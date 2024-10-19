@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.name {
+    flex:1;
+    margin-left: 2%;
+}
+
+.links {
+    display: flex;
+    gap: 10%; 
+    justify-content: center;
+    flex: 1; 
+    margin-right: 35%;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.theme-change
+{
+    margin-right: 2%;
+}
+
+.theme-change:hover
+{
+    cursor: pointer;
+}
+
+.theme-change i 
+{
+    font-size: 1.5rem;
+}
