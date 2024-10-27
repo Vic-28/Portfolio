@@ -1,38 +1,34 @@
-header {
+header
+{
     display: flex;
+    padding:5%;
+    border: solid;
+}
+
+.nombre
+{
     align-items: center;
-    padding: 2%;
+    text-align: center;
+}
+.links
+{
+
 }
 
-.name {
-    flex:1;
-    margin-left: 2%;
-}
-
-.links {
+nav
+{
     display: flex;
-    gap: 10%; 
-    justify-content: center;
-    flex: 1; 
-    margin-right: 35%;
+    font-size: 25px;
+    width: 57%;
+    height: min-content;
+    gap: 5%;
+    margin-left: 5%;
 }
 
-.links a {
+nav a
+{
     text-decoration: none;
-    color: black;
-}
-
-.theme-change
-{
-    margin-right: 2%;
-}
-
-.theme-change:hover
-{
-    cursor: pointer;
-}
-
-.theme-change i 
-{
-    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-style: italic ;
+    font-weight: bolder;
 }
