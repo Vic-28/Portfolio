@@ -1,18 +1,26 @@
 <header>
     <div class="nombre">
-        <h1>Víctor Delgado Batista</h1>
-        <h2>Software Developer</h2>
-        <div class="links">
-            <img width="50" height="50" src="https://img.icons8.com/sf-ultralight-filled/50/FFFFFF/github.png" alt="github"/>
-            <img width="50" height="50" src="https://img.icons8.com/sf-ultralight-filled/50/FFFFFF/linkedin.png" alt="linkedin"/>
-            <img width="50" height="50" src="https://img.icons8.com/sf-ultralight-filled/50/FFFFFF/secured-letter.png" alt="secured-letter"/>
-        </div>
+      <h1>Víctor Delgado Batista</h1>
+      <h2>Software Developer</h2>
+      <div class="links">
+        <a href="https://github.com/vic-28">
+          <img width="50" height="50" src="https://img.icons8.com/sf-ultralight-filled/50/FFFFFF/github.png" alt="GitHub"/>
+        </a>
+        <a href="https://www.linkedin.com/in/victordelgadobatista/">
+          <img width="50" height="50" src="https://img.icons8.com/sf-ultralight-filled/50/FFFFFF/linkedin.png" alt="LinkedIn"/>
+        </a>
+        <a href="mailto:delgadobatistavictor@gmail.com">
+          <img width="50" height="50" src="https://img.icons8.com/sf-ultralight-filled/50/FFFFFF/secured-letter.png" alt="Email"/>
+        </a>
+      </div>
     </div> 
     <nav class="nav">
-        <a routerLink="/sobremi" routerLinkActive="active">Sobre Mi</a>
-        <a routerLink="/experiencia" routerLinkActive="active">Experiencia</a>
-        <a routerLink="/estudios" routerLinkActive="active">Estudios</a>
-        <a routerLink="/proyectos" routerLinkActive="active">Proyectos</a>
-        <a routerLink="/posts" routerLinkActive="active">Posts</a>
+      <a *ngFor="let link of navLinks; let i = index"
+         [routerLink]="link.path"
+         [ngClass]="link.class"
+         (click)="navLinkSelected(i)">
+        {{ link.label }}
+      </a>
     </nav>
-</header>
+  </header>
+  

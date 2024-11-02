@@ -1,0 +1,14 @@
+<div class="studies">
+    <h2>Estudios</h2>
+    <div *ngFor="let stu of studies" class="studies-item">
+      <h4>{{ stu.title }}</h4>
+    <div class="subtitle">
+        <p class="subtitle-company">{{ stu.school }}<p>
+        <p class="subtitle-date">{{ stu.date }}</p>
+    </div>
+
+    <div class="utilitys">
+        <p *ngFor="let utility of stu.utilities">{{ utility }}</p>
+      </div>
+    </div>
+</div>

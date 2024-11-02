@@ -2,7 +2,6 @@ header
 {
     display: flex;
     padding:5%;
-    border: solid;
 }
 
 .nombre
@@ -10,9 +9,16 @@ header
     align-items: center;
     text-align: center;
 }
-.links
+.links>*
 {
+    transition: 0.2s;
+}
 
+.links> *:hover
+{
+    transform: scale(1.1);
+    filter:brightness(1.8);
+    cursor: pointer;
 }
 
 nav
@@ -31,4 +37,20 @@ nav a
     color: rgb(255, 255, 255);
     font-style: italic ;
     font-weight: bolder;
+    transition: 0.2s;
+}
+
+nav a:hover
+{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+nav a.active
+{
+    border-bottom:solid white 1px;
+}
+
+nav a.inactive{
+    filter: brightness(0.8);
 }

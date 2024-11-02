@@ -1,0 +1,49 @@
+.studies
+{
+    align-items: center;
+    background-color:#D9D9D9 ;
+    color: #2F885D;
+    width: 80%;
+    padding: 5%;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.studies-item
+{
+    background-color:#F2F2F2 ;
+    margin: 3%;
+    padding: 5%;
+    border-radius: 2%;
+}
+
+.subtitle
+{
+    display: flex;
+    gap: 10px;
+}
+
+.subtitle-company
+{
+    font-weight: bold;
+}
+
+.utilitys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 2%;
+    padding: 1%; 
+    overflow: hidden; 
+}
+
+.utilitys p {
+    background-color: #2F885D;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 40px 40px 40px 40px;
+    padding: 1% 2%; 
+    white-space: nowrap; 
+}
