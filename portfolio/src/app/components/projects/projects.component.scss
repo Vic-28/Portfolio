@@ -72,3 +72,38 @@ a
     padding: 1% 2%; 
     white-space: nowrap; 
 }
+@media (max-width: 768px)
+{
+    .projects
+    {
+        font-size: medium;
+        text-align: center;
+    }
+    .project-item
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-item img
+    {
+        width: 100%;
+        margin-bottom: 10%;
+        
+    }
+    .project-item-header
+    {
+        width: 100%;
+    }
+    .project-item .details
+    {
+        flex-direction: column;
+    }
+    .utilitys
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .utilitys p
+    {
+    }
+}

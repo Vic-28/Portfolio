@@ -47,3 +47,43 @@
     padding: 1% 2%; 
     white-space: nowrap; 
 }
+
+@media (max-width: 768px)
+{
+    .studies
+    {
+        font-size: medium;
+        text-align: center;
+    }
+    .studies-item
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .subtitle
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2%;
+        padding: 0;
+        margin-bottom: 6%;
+    }
+    .subtitle p
+    {
+        margin: 2px;
+        padding: 0;
+    }
+
+    .subtitle-date
+    {
+        font-style: italic;
+    }
+    .utilitys
+    {
+        align-items: center;
+        margin-left: 10%;
+        gap:1%;
+    }
+}
