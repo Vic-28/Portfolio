@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./src",  // Establece src como la raíz para resolver módulos
     "paths": {
+      "@app/*": ["app/*"],
       "*": ["node_modules/*"]
     },
     "outDir": "./dist/out-tsc",
