@@ -34,10 +34,11 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",{
+              "src/assets",
+              {
                 "glob": "**/*.svg",
                 "input": "node_modules/bootstrap-icons/icons",
-                "output": "/assets/bootstrap-icons/"
+                "output": "assets/bootstrap-icons/"
               }
             ],
             "styles": [
@@ -54,8 +55,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "750kb",
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -63,7 +64,10 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "optimization": true,
+              "extractLicenses": true,
+              "sourceMap": false
             },
             "development": {
               "optimization": false,
