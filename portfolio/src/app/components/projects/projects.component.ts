@@ -30,6 +30,19 @@ export class ProjectsComponent {
         'SonarCloud',
         'CloudFlare'
       ]
+    },
+    {
+      name: 'Near Spots [Actualmente Offline]',
+      img:'https://i.postimg.cc/bvTQFmr7/image.png',
+      url:'https://near-spot.vercel.app/',
+      description:'Plataforma que utiliza ubicación en tiempo real del usuario para mostrar puntos de interés cercanos usando la API de Google Maps.',
+      utilities:[
+        'Angular',
+        'Node.js',
+        'Vercel',
+        'Google Maps API',
+        'Google Cloud'
+      ]
     }
 
   ]
