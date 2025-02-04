@@ -9,6 +9,12 @@ header
     align-items: center;
     text-align: center;
 }
+
+#title:hover
+{
+    cursor: pointer;
+}
+
 .links>*
 {
     transition: 0.2s;
