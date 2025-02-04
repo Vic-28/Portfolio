@@ -43,6 +43,17 @@ export class ProjectsComponent {
         'Google Maps API',
         'Google Cloud'
       ]
+    },
+    {
+      name: 'Gestor de libros',
+      img:'https://i.postimg.cc/K8vqCCxx/image.png',
+      url:'https://prueba-tecnica.pages.dev/',
+      description:'Página de gestión de libros basado en una prueba técnica. El usuario podrá añadir, editar y eliminar libros de la lista. Podrás filtrar por géneros o cantidad de páginas.',
+      utilities:[
+        'Angular',
+        'SonarCloud',
+        'CloudFlare'
+      ]
     }
 
   ]
