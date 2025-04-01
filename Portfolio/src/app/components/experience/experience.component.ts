@@ -10,6 +10,13 @@ export class ExperienceComponent {
   experiencia = [
     {
       title: 'Desarrollador Web',
+      company: 'ITER',
+      date: 'Abril 2025 - Actualmente',
+      details: [
+      ]
+    },
+    {
+      title: 'Desarrollador Web',
       company: 'AdemyPro',
       date: 'Diciembre 2024 - Febrero 2025',
       details: [
