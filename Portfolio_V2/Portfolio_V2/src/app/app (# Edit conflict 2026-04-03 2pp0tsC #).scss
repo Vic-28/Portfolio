@@ -1,10 +1,8 @@
-@use 'app/styles/variables' as *;
-
+@use "variables";
 
 body
 {
     background-color: $background-light;
     align-items: center;
-    color: $details1-light;
-
+    color: $secondary-light;
 }
