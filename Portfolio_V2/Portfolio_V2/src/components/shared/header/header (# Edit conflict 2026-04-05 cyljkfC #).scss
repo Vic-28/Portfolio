@@ -1,0 +1,11 @@
+
+@use '../../../../app/styles/variables' as *;
+
+button{
+    background-color: transparent;
+    border: none;
+    color: $details1-light;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
