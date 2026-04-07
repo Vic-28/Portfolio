@@ -1,0 +1,66 @@
+
+@use 'app/styles/variables' as *;
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px black solid;
+}
+
+button{
+    background-color: $secondary;
+    border: solid 2px $details1;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    color: $details1;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-link svg{
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.icon-link svg [stroke]:not([stroke='none']){
+    stroke: currentColor;
+}
+
+.icon-link svg [fill]:not([fill='none']){
+    fill: currentColor;
+}
+
+.icon-link:hover,
+.icon-link:focus-visible{
+    color: $secondary;
+    transform: translateY(-1px);
+}
