@@ -1,0 +1,8 @@
+@for (exp of experiences(); track exp.company) {
+  <article>
+    <h3>{{ exp.role }}</h3>
+    <h4>{{ exp.company }}</h4>
+    <span>{{ exp.period }}</span>
+    <p>{{ exp.description }}</p>
+  </article>
+}
