@@ -1,8 +1,31 @@
-@for (exp of experiences(); track exp.company) {
-  <article>
-    <h3>{{ exp.role }}</h3>
-    <h4>{{ exp.company }}</h4>
-    <span>{{ exp.period }}</span>
-    <p>{{ exp.description }}</p>
+<div class="experience">
+  <h2 class="experience-section-title">Experiencia</h2>
+  @for (exp of experiences(); track exp.company; let i = $index) {
+  <article [class.is-open]="isExpanded(i)">
+    <button type="button" class="experience-summary" (click)="toggleExperience(i)" [attr.aria-expanded]="isExpanded(i)"
+      [attr.aria-controls]="panelId(i)">
+      <span class="summary-main">
+        @if (exp.logo && exp.logo !== '*') {
+        <img class="company-logo" [src]="exp.logo" [alt]="'Logo de ' + exp.company" width="44" height="44"
+          loading="lazy" />
+        } @else {
+        <span class="company-logo-placeholder" aria-hidden="true">{{ exp.company[0] }}</span>
+        }
+
+        <span class="title-group">
+          <span class="role">{{ exp.role }}</span>
+          <span class="company">{{ exp.company }}</span>
+        </span>
+      </span>
+      <span class="period">{{ exp.period }}</span>
+    </button>
+
+    <div class="experience-details" [id]="panelId(i)" [class.is-expanded]="isExpanded(i)"
+      [attr.aria-hidden]="!isExpanded(i)">
+      <div class="experience-details-content">
+        <p>{{ exp.description }}</p>
+      </div>
+    </div>
   </article>
-}
+  }
+</div>

@@ -1,0 +1,118 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: solid green;
+    width: 80%;
+}
+
+.experience-section-title {
+    margin: 0;
+    padding: 0.4rem 0.8rem;
+    width: fit-content;
+    border-radius: 999px;
+}
+
+article {
+    border: 1px solid #d0d7de;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+article.is-open {
+    border-color: #0f766e;
+    box-shadow: 0 8px 20px rgba(15, 118, 110, 0.15);
+}
+
+.experience-summary {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.summary-main {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.company-logo,
+.company-logo-placeholder {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.company-logo {
+    object-fit: cover;
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+}
+
+.company-logo-placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f766e;
+    background-color: #ccfbf1;
+    border: 1px solid #99f6e4;
+}
+
+.title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.title-group .role,
+.title-group .company {
+    margin: 0;
+}
+
+.title-group .role {
+    font-weight: 700;
+}
+
+.title-group .company {
+    color: #334155;
+}
+
+.period {
+    white-space: nowrap;
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+.experience-details {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    border-top: 0 solid #e2e8f0;
+    transition: grid-template-rows 260ms ease, opacity 220ms ease, border-top-width 220ms ease;
+}
+
+.experience-details.is-expanded {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    border-top-width: 1px;
+}
+
+.experience-details-content {
+    overflow: hidden;
+    padding: 0.9rem 1rem 1rem;
+}
+
+.experience-details p {
+    margin: 0;
+}
